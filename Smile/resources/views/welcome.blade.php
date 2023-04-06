@@ -26,7 +26,9 @@
     if($nome == "Pedro")
     <p>O nome é Pedro</p>
     <p>O nome {{ $nome }} e ele tem {{ $idade }} sua profissão é {{ $profissao }}</p>
-    
+    @for ($i = 0; $i < count ($arr); $i++)
+        <p>{{ $arr [i] }}<p>
+    @endfor    
 
 </body>
 </html>
