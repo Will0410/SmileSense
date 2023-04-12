@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        @vite('resources/css/app.css')
+        <link rel="stylesheet" href="">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -16,6 +17,11 @@
         </style>
     </head>
     <body class="antialiased">
+        
+        <h1 class="bg-gray-400 md:bg-red-500 text-9xl">
+            Hello world!
+          </h1>
+        
         <h1>Smile Sense</h1>
         @if(10 > 20)
             <p>condição true</p>
@@ -27,7 +33,7 @@
     <p>O nome é Pedro</p>
     <p>O nome {{ $nome }} e ele tem {{ $idade }} sua profissão é {{ $profissao }}</p>
     @for ($i = 0; $i < count ($arr); $i++)
-        <p>{{ $arr [i] }}<p>
+        <p>{{ $arr [$i] }}<p>
     @endfor    
 
 </body>

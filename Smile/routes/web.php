@@ -34,4 +34,9 @@ Route::get('/contact', function () {
 Route::get('/buy', function () {
     return view('buy');
 });
+
+Route::get('/login', function () {
+    return view('Pagin_logpac');
+});
+
     
